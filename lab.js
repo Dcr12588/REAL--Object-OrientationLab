@@ -183,8 +183,9 @@ var user = {
 
 //Code Here
 
-
-
+user.name = `Bryan G. Smith`
+user.email = `bryan.smith@devmounta.in`
+console.log(user)
 
 //////////////////////////// PROBLEM 11 ////////////////////////////
 /*
@@ -193,7 +194,8 @@ var user = {
 
 //Code Here
 
-
+delete user.age
+console.log(user)
 //////////////////////////// PROBLEM 12 ////////////////////////////
 /*
   Create a class called 'Cat'. Make sure to call your constructor, and require these 3 parameters: name, age, color.
@@ -203,8 +205,21 @@ var user = {
 
 //Code here
 
+class Cat {
+  constructor(name, age, color){
+  this.name = name,
+  this.age = age,
+  this.color = color
+  }
+}
+// let catSpecs = {
+//   name: `fluff`,
+//   age: `10`,
+//   color: `orange`
+// }
 
-
+let fluff = new Cat (`fluff`, 10, `orange`)
+console.log(fluff.color)
 //////////////////////////// PROBLEM 13 ////////////////////////////
 /*
   Create a class called 'Wizard'. Make sure to call your constructor, and require these 3 parameters: name, age, favoriteSpell.
@@ -214,6 +229,19 @@ var user = {
 */
 
 //Code here
+
+class wizard {
+  constructor (name, age , favoriteSpell){
+    this.name = name, 
+    this.age = age,
+    this.favoriteSpell = favoriteSpell
+  }
+spellCast(){
+  console.log(`${this.name} has cast ${this.favoriteSpell}`)
+}
+
+}
+
 
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*

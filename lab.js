@@ -239,10 +239,10 @@ class wizard {
 spellCast(){
   console.log(`${this.name} has cast ${this.favoriteSpell}`)
 }
-
 }
 
-
+let Harry = new wizard (`Harry`, 14, `FIRE`)
+console.log(Harry.spellCast())
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*
     Write a class called Phone. We'll use it as if we were creating
@@ -268,7 +268,24 @@ spellCast(){
 
 //Code Here
 
+class Phone {
+  constructor(brand, model, storage, color, price){
+    this.brand = brand,
+    this.model = model,
+    this.storage = storage,
+    this.color = color,
+    this.price = price,
+    this.sold = false
+  }
   
+  sell(){
+    this.sold = true
+    console.log(`${this.brand} ${this.model} has been sold`)
+  }
+changePrice (newPrice){
+  this.price = newPrice
+}
+}
 /*
     Next make three new phone instances using your class.
     Send in values of your choice. They should match these data types:
@@ -281,6 +298,8 @@ spellCast(){
 
 //Code Here
 
+let iphone = new Phone(`Apple`, `13 Pro + X`, 256, `Space Grey`, 16000000)
+
 /* 
   Call the changePrice function on one of your phones, 
   don't forget to pass in a new price 
@@ -289,6 +308,9 @@ spellCast(){
 */ 
 
 //Code Here 
+
+iphone.changePrice(1300)
+console.log(iphone)
 
 
 /*
